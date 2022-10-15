@@ -126,23 +126,23 @@ I have used this to store registered user's database in order to access the weba
 ## How To Run This Project
 
 I don't want to get your anxious but there are a lot of steps involved in order to successfully implement and run this project. First of all, you will need an AWS account. Then you will also need to download MySQL Workbench. Once you have both of these, please follow the below steps:
-1- Please type AWS EC2 in the search console and create a new instance and an elastic IP in order to host your website. (Assuming you already know how to create an instance and link it. If not, please refer to the link : https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&s_kwcid=AL!4422!3!467723097967!p!!g!!amazon%20ec2&ef_id=CjwKCAjwtKmaBhBMEiwAyINuwLUp3DM0PBZRgiFvc4LxmQCcB8fAvJG-iTTwOnn2UxMW3JUxp8ckJhoCLwcQAvD_BwE:G:s&s_kwcid=AL!4422!3!467723097967!p!!g!!amazon%20ec2
-2- Now you will need to go to AWS API Gateway and create an API in order for your backend to connect to front end. If you don't know how to do the same, please refer to : https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop.html
-3- Now we will need to create a database in order to store the user's login information.
-4- For this we use AWS RDS. Go to RDS and create a database. You can also refer to: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html
-5- Next, you will need to setup AWS SES. Please follow the link : https://docs.aws.amazon.com/ses/latest/dg/setting-up.html
-6- Once done, please create an AWS S3 bucket to get access to and store your database. Please refer to : https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html
-7- On your AWS console, search for AWS Lambda and click on it.
-8- Once you are in AWS Lambda, on the left panel, click on functions and Create a function called Comprehend.
-9- After that, you will see an option called Add Trigger, click on that and add API Gateway from the list.
-10- Once created, please click on the Add Trigger option and select add API Gateway.
-11- Scroll below, you will see an option called code, click on that and at the top right corner, there will be an option called import from. Click on that and select add .zip. Here please  add the file lambda_function.py from the repository given above.
-12- Once created, please click on Add Trigger and add API Gateway again and link the API that you have created earlier.
-13- Then scroll below, and in the code section you will see an option to upload from. Click on that and select the zip file option.
-14- Here you will upload the entire package named "twitterSentimentalAnalysis-af7cb393-29ec-4d4a-a967-b300af915fde" given above in my repository.
-15- Here, we can test if all the steps performed till now are going well or not. For this, you can click on the test option and configure input values to the database. If the invocation function works and if the json formal is saved in the database, then you are good to go. Otherwise please go through the documentation again and check the connections.
-16- Once the test works, you can copy the IP in your EC2 and run the web app and ta-da, you have a webapp to analyze the sentiments of any tweet. You will just need to signup and you must receive the verification email in the email ID that you have linked to the SES. Then in the homepage, just paste the link of any tweet link and you should be good to go.
-#### 17- Note: You will also need an access to twitter API for which you will need a developer's account. Please visit the link : https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api
+- Please type AWS EC2 in the search console and create a new instance and an elastic IP in order to host your website. (Assuming you already know how to create an instance and link it. If not, please refer to the link : https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&s_kwcid=AL!4422!3!467723097967!p!!g!!amazon%20ec2&ef_id=CjwKCAjwtKmaBhBMEiwAyINuwLUp3DM0PBZRgiFvc4LxmQCcB8fAvJG-iTTwOnn2UxMW3JUxp8ckJhoCLwcQAvD_BwE:G:s&s_kwcid=AL!4422!3!467723097967!p!!g!!amazon%20ec2
+- Now you will need to go to AWS API Gateway and create an API in order for your backend to connect to front end. If you don't know how to do the same, please refer to : https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop.html
+- Now we will need to create a database in order to store the user's login information.
+- For this we use AWS RDS. Go to RDS and create a database. You can also refer to: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html
+- Next, you will need to setup AWS SES. Please follow the link : https://docs.aws.amazon.com/ses/latest/dg/setting-up.html
+- Once done, please create an AWS S3 bucket to get access to and store your database. Please refer to : https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html
+- On your AWS console, search for AWS Lambda and click on it.
+- Once you are in AWS Lambda, on the left panel, click on functions and Create a function called Comprehend.
+- After that, you will see an option called Add Trigger, click on that and add API Gateway from the list.
+- Once created, please click on the Add Trigger option and select add API Gateway.
+- Scroll below, you will see an option called code, click on that and at the top right corner, there will be an option called import from. Click on that and select add .zip. Here please  add the file lambda_function.py from the repository given above.
+- Once created, please click on Add Trigger and add API Gateway again and link the API that you have created earlier.
+- Then scroll below, and in the code section you will see an option to upload from. Click on that and select the zip file option.
+- Here you will upload the entire package named "twitterSentimentalAnalysis-af7cb393-29ec-4d4a-a967-b300af915fde" given above in my repository.
+- Here, we can test if all the steps performed till now are going well or not. For this, you can click on the test option and configure input values to the database. If the invocation function works and if the json formal is saved in the database, then you are good to go. Otherwise please go through the documentation again and check the connections.
+- Once the test works, you can copy the IP in your EC2 and run the web app and ta-da, you have a webapp to analyze the sentiments of any tweet. You will just need to signup and you must receive the verification email in the email ID that you have linked to the SES. Then in the homepage, just paste the link of any tweet link and you should be good to go.
+#### - Note: You will also need an access to twitter API for which you will need a developer's account. Please visit the link : https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api
 
 
 
