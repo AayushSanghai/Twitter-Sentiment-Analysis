@@ -21,7 +21,7 @@ The overall benefits of sentiment analysis include:
 To understand the goal and challenges of sentiment analysis, here are some examples:
 - Netflix has the best selection of films
 - Hulu has a great UI
-- I dislike like the new crime series
+- I dislike the new crime series
 - I hate waiting for the next series to come out
 
 
