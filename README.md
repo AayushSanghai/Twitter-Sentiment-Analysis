@@ -106,6 +106,9 @@ I have used this to store registered user's database in order to access the weba
 ![image](https://user-images.githubusercontent.com/61236166/195973128-390bd77f-84c9-4d77-87b8-c231a9d7ddce.png)
 
 
+#### Python and it's framework Django
+
+
 ## Some screenshots of the webapp
 
 #### Login Page
