@@ -35,6 +35,12 @@ Sentiment analysis is used in social media monitoring, allowing businesses to ga
 Hence I have developed and deployed a very basic module of Sentiment Analysis on tweets on twitter to estimate a population's reaction towards a particular tweet
 
 
+## Architecture Diagram
+
+![image](https://user-images.githubusercontent.com/61236166/196297270-01c47388-bf43-472e-b949-5cc86be65b56.png)
+
+
+
 ## Technologies and Services Used
 
 #### AWS EC2
