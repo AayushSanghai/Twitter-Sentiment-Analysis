@@ -134,7 +134,7 @@ I have used this to store registered user's database in order to access the weba
 
 ## How To Run This Project
 
-I don't want to get your anxious but there are a lot of steps involved in order to successfully implement and run this project. First of all, you will need an AWS account. Then you will also need to download MySQL Workbench. Once you have both of these, please follow the below steps:
+I don't want to get you anxious but there are a lot of steps involved in order to successfully implement and run this project. Hence, please follow all the steps carefully and Voila, you can run the project for yourself. First of all, you will need an AWS account. Then you will also need to download MySQL Workbench. Once you have both of these, please follow the below steps:
 - Please type AWS EC2 in the search console and create a new instance and an elastic IP in order to host your website. (Assuming you already know how to create an instance and link it. If not, please refer to the link : https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&s_kwcid=AL!4422!3!467723097967!p!!g!!amazon%20ec2&ef_id=CjwKCAjwtKmaBhBMEiwAyINuwLUp3DM0PBZRgiFvc4LxmQCcB8fAvJG-iTTwOnn2UxMW3JUxp8ckJhoCLwcQAvD_BwE:G:s&s_kwcid=AL!4422!3!467723097967!p!!g!!amazon%20ec2
 - Now you will need to go to AWS API Gateway and create an API in order for your backend to connect to front end. If you don't know how to do the same, please refer to : https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop.html
 - Now we will need to create a database in order to store the user's login information.
